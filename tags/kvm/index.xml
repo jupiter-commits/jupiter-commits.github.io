@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KVM on Jupiter notes</title>
+    <link>https://jupiter-commits.github.io/tags/kvm/</link>
+    <description>Recent content in KVM on Jupiter notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Dec 2024 20:18:30 +0200</lastBuildDate>
+    <atom:link href="https://jupiter-commits.github.io/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Level up your KVM storage management with these tricks</title>
+      <link>https://jupiter-commits.github.io/posts/level-up-vm/</link>
+      <pubDate>Wed, 25 Dec 2024 20:18:30 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/level-up-vm/</guid>
+      <description>qemu-img resize /path/to/disk.qcow2 50G qemu-img info /path/to/disk.qcow2 virt-sparsify --in-place /path/to/disk.qcow2 qemu-img convert /path/to/disk.qcow2 -O raw /another/path/disk.img </description>
+    </item>
+  </channel>
+</rss>

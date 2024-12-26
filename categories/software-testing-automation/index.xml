@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software testing &amp; automation on Jupiter notes</title>
+    <link>https://jupiter-commits.github.io/categories/software-testing-automation/</link>
+    <description>Recent content in Software testing &amp; automation on Jupiter notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Aug 2024 21:33:09 +0200</lastBuildDate>
+    <atom:link href="https://jupiter-commits.github.io/categories/software-testing-automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A look into software test automation (draft)</title>
+      <link>https://jupiter-commits.github.io/posts/testing/test-automation/</link>
+      <pubDate>Sun, 25 Aug 2024 21:33:09 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/testing/test-automation/</guid>
+      <description>What is software test automation and why project kickstarter checklist project tricks notes share your web driver between methods by implementing singleton, or pass driver by constructor from basetest all logic for locating and waits should be in the framework actions (methods) on page returns another page class make use of aanotations for dependencies or use xml file to run your tests to depend on a class from another package: you need to inherit it and use depends on its group, but instead of complex dependencies you could use before and after annotations cypress vs selenium and playwright cypress doesn&amp;rsquo;t allow xpath without plugin</description>
+    </item>
+    <item>
+      <title>Web element locators</title>
+      <link>https://jupiter-commits.github.io/posts/testing/element-locators/</link>
+      <pubDate>Sun, 25 Aug 2024 21:33:09 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/testing/element-locators/</guid>
+      <description>Don&amp;rsquo;t use the web browser dev tools option to copy xpath locator for an element It generates unstable locators with multiple indexes that can be changed frequently later, use stable locators instead example:&#xA;Locate elements using their unique ID or Class if found&#xA;locating by link text is also easy&#xA;You may need to use complex xpath for use cases like taking action on specific row of a table, instead of multiple css operators example :</description>
+    </item>
+    <item>
+      <title>Tips for effective software test plans</title>
+      <link>https://jupiter-commits.github.io/posts/testing/effective-test-plans/</link>
+      <pubDate>Tue, 09 Jul 2024 20:42:24 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/testing/effective-test-plans/</guid>
+      <description>start with a template containing; test case name: descriptive for anyone, write module name first at any format (between [] or &amp;lt;&amp;gt; ) steps: don&amp;rsquo;t write &amp;ldquo;repeat step x&amp;rdquo;, be clear, preconditions should be written before test case or in attached data expected results: not for every step but only when needed a good test case design will make a single step doesn&amp;rsquo;t block a whole case if it is irrelevant , maybe check general UI or do smoke test for blocker bugs first</description>
+    </item>
+  </channel>
+</rss>
