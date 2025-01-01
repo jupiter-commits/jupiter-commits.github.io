@@ -13,7 +13,7 @@
       <link>https://jupiter-commits.github.io/posts/commands-that-save-effort/</link>
       <pubDate>Wed, 25 Dec 2024 20:19:03 +0200</pubDate>
       <guid>https://jupiter-commits.github.io/posts/commands-that-save-effort/</guid>
-      <description> Search in the contents of nested files: grep -rnw . -e &amp;#34;word to search for&amp;#34; | less in less text viewer, write /word and click enter to search or it, then use n to go for next occurance, Shift+n to go backwards, and q to exit&#xA;Compile your markdown file to PDF with auto generated table of contents pandoc --pdf-engine=xelatex --toc -f markdown-implicit_figures --variable colorlinks=true input.md -o output.pdf </description>
+      <description> Search in the contents of nested files: grep -rnw . -e &amp;#34;word to search for&amp;#34; | less in less text viewer, write /word and click enter to search for it, then use n to go for next occurance, Shift+n to go backwards, and q to exit&#xA;Compile your markdown file to PDF with auto generated table of contents pandoc --pdf-engine=xelatex --toc -f markdown-implicit_figures --variable colorlinks=true input.md -o output.pdf </description>
     </item>
   </channel>
 </rss>

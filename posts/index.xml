@@ -6,21 +6,28 @@
     <description>Recent content in Post on Jupiter notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Dec 2024 20:19:03 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 28 Dec 2024 20:18:43 +0200</lastBuildDate>
     <atom:link href="https://jupiter-commits.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Approaches for enterprise virtualization</title>
+      <link>https://jupiter-commits.github.io/posts/virtualisation-approaches/</link>
+      <pubDate>Sat, 28 Dec 2024 20:18:43 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/virtualisation-approaches/</guid>
+      <description>this article is still being edited, visit later fore more detailed information&#xA;history and use cases of virtualisation A hypervisor is the solution that allows virtual machines to share host resources.&#xA;Virtualisation allows for running multiple operating systems on a single physical host.&#xA;This helps enhancing server utilisation and management.&#xA;Consilidation is sharing the resources of a (big) server by multiple virtual machines, leading to reduced cost&#xA;Paravartualisation Paravirtualization is a technique to improve the performance, the guest operating system has support for paravirtualization to work more efficiently with the hypervisor with less overhead.</description>
+    </item>
+    <item>
+      <title>No USB drive? no problem, how to boot from ISO file on disk with GRUB2</title>
+      <link>https://jupiter-commits.github.io/posts/boot-iso-file/</link>
+      <pubDate>Fri, 27 Dec 2024 11:06:39 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/boot-iso-file/</guid>
+      <description>Introduction In this post you will learn how to boot from an ISO file that exists on disk, without needing to burn CD or a USB.&#xA;You need GRUB2 (version 1.97) or later to use this, GRUB legacy doesn&amp;rsquo;t support this feature&#xA;To check what version of GRUB is installed:&#xA;grub-install --version Adding a GRUB menu entry manually edit /etc/grub.d/40_custom&#xA;Using grml-rescueboot First install grml-rescueboot using your distribution package manager</description>
+    </item>
     <item>
       <title>Commands that save much effort</title>
       <link>https://jupiter-commits.github.io/posts/commands-that-save-effort/</link>
       <pubDate>Wed, 25 Dec 2024 20:19:03 +0200</pubDate>
       <guid>https://jupiter-commits.github.io/posts/commands-that-save-effort/</guid>
-      <description> Search in the contents of nested files: grep -rnw . -e &amp;#34;word to search for&amp;#34; | less in less text viewer, write /word and click enter to search or it, then use n to go for next occurance, Shift+n to go backwards, and q to exit&#xA;Compile your markdown file to PDF with auto generated table of contents pandoc --pdf-engine=xelatex --toc -f markdown-implicit_figures --variable colorlinks=true input.md -o output.pdf </description>
-    </item>
-    <item>
-      <title>Approaches for enterprise virtualisation (draft)</title>
-      <link>https://jupiter-commits.github.io/posts/virtualisation-approaches/</link>
-      <pubDate>Wed, 25 Dec 2024 20:18:43 +0200</pubDate>
-      <guid>https://jupiter-commits.github.io/posts/virtualisation-approaches/</guid>
-      <description>history and use cases of virtualisation consilidation para vartualisation Choosing hypervisor: (cloud provider uses which, fast? , secure?, open source?) ESXi: famous, most used, tutorials, used in university, used in companies XCP-ng Xenserver(Citrix) KVM, on CentOS Hyper-v Proxmox need usability and ease to manage vms&#xA;the problem to solve is:&#xA;remotely management separation of server to multiple vms utilization of limited GPUs and resources </description>
+      <description> Search in the contents of nested files: grep -rnw . -e &amp;#34;word to search for&amp;#34; | less in less text viewer, write /word and click enter to search for it, then use n to go for next occurance, Shift+n to go backwards, and q to exit&#xA;Compile your markdown file to PDF with auto generated table of contents pandoc --pdf-engine=xelatex --toc -f markdown-implicit_figures --variable colorlinks=true input.md -o output.pdf </description>
     </item>
     <item>
       <title>Level up your KVM storage management with these tricks</title>
@@ -48,7 +55,7 @@
       <link>https://jupiter-commits.github.io/posts/testing/element-locators/</link>
       <pubDate>Sun, 25 Aug 2024 21:33:09 +0200</pubDate>
       <guid>https://jupiter-commits.github.io/posts/testing/element-locators/</guid>
-      <description>Don&amp;rsquo;t use the web browser dev tools option to copy xpath locator for an element It generates unstable locators with multiple indexes that can be changed frequently later, use stable locators instead example:&#xA;Locate elements using their unique ID or Class if found&#xA;locating by link text is also easy&#xA;You may need to use complex xpath for use cases like taking action on specific row of a table, instead of multiple css operators example :</description>
+      <description>Don&amp;rsquo;t use the web browser dev tools option to copy xpath locator for an element It generates unstable locators with multiple indexes that can be changed frequently later, use stable locators instead example:&#xA;Locate elements using their unique ID or Class if found locating by link text is also easy&#xA;You may need to use complex xpath for use cases like taking action on specific row of a table, instead of multiple css operators example :</description>
     </item>
     <item>
       <title>Tips for effective software test plans</title>

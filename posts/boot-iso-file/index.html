@@ -5,12 +5,12 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Virtualisation</title>
+<title>No USB drive? no problem, how to boot from ISO file on disk with GRUB2</title>
 <meta
   name="description"
-  content=""
+  content="Booting from Iso directly can save you time and money"
 />
-<link rel="canonical" href="https://jupiter-commits.github.io/categories/virtualisation/" />
+<link rel="canonical" href="https://jupiter-commits.github.io/posts/boot-iso-file/" />
 <link rel="robots" href="/robots.txt" />
 
 <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
@@ -135,76 +135,49 @@
   
     <main id="content">
 
+<article class="flex flex-col gap-10">
+  <header class="flex flex-col gap-2">
+    <h2 class="title-large">No USB drive? no problem, how to boot from ISO file on disk with GRUB2</h2>
 
-
-
-<div class="flex flex-col gap-1">
-  <h1 class="text-2xl font-extrabold">
-    
-      Virtualisation
+    <div class="meta">
       
-    </h1>
-  
-  
-</div>
+      <time datetime="2024-12-27 11:06:39 &#43;0200 EET" title=''>
+        Estimated reading time: 1 minutes
+      </time>
 
-<section class="flex flex-col gap-10">
-  
-    <article class="flex flex-col gap-1">
-  <h1>
-    <a href="https://jupiter-commits.github.io/posts/virtualisation-approaches/">Approaches for enterprise virtualization</a>
-  </h1>
+       
+      
+    </div>
+  </header>
+
   
 
-  <div class="description">
+  <section><h1 id="introduction">Introduction</h1>
+<p>In this post you will learn how to boot from an ISO file that exists on disk, without needing to burn CD or a USB.</p>
+<blockquote>
+<p>You need GRUB2 (version 1.97) or later to use this, GRUB legacy doesn&rsquo;t support this feature</p>
+</blockquote>
+<p>To check what version of GRUB is installed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grub-install --version
+</span></span></code></pre></div><h1 id="adding-a-grub-menu-entry-manually">Adding a GRUB menu entry manually</h1>
+<p>edit <code>/etc/grub.d/40_custom</code></p>
+<h1 id="using-grml-rescueboot">Using grml-rescueboot</h1>
+<p>First install <code>grml-rescueboot</code> using your distribution package manager</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt install grml-rescueboot
+</span></span></code></pre></div></section>
+
+  
     
-      Part of upcoming virtualization series, comparing virtualisation solutions and more
+  
+
     
-  </div>
+  
 
-  <div class="mt-2">
-    <a class="read-more" href="https://jupiter-commits.github.io/posts/virtualisation-approaches/">
-      Read more
-      <span class="w-4 h-4 stroke-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-</svg>
 
-      </span>
-    </a>
-  </div>
+  <footer>
+    
+  </footer>
 </article>
-
-  
-    <article class="flex flex-col gap-1">
-  <h1>
-    <a href="https://jupiter-commits.github.io/posts/level-up-vm/">Level up your KVM storage management with these tricks</a>
-  </h1>
-  
-
-  <div class="description">
-    
-      To help you working more effectively with virtual machines
-    
-  </div>
-
-  <div class="mt-2">
-    <a class="read-more" href="https://jupiter-commits.github.io/posts/level-up-vm/">
-      Read more
-      <span class="w-4 h-4 stroke-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-</svg>
-
-      </span>
-    </a>
-  </div>
-</article>
-
-  
-</section>
-
-
 
 
     </main><footer class="pt-5 pb-10 grid gap-3 sm:grid-cols-2">

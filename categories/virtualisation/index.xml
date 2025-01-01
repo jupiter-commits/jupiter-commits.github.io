@@ -6,14 +6,14 @@
     <description>Recent content in Virtualisation on Jupiter notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Dec 2024 20:18:43 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 28 Dec 2024 20:18:43 +0200</lastBuildDate>
     <atom:link href="https://jupiter-commits.github.io/categories/virtualisation/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Approaches for enterprise virtualisation (draft)</title>
+      <title>Approaches for enterprise virtualization</title>
       <link>https://jupiter-commits.github.io/posts/virtualisation-approaches/</link>
-      <pubDate>Wed, 25 Dec 2024 20:18:43 +0200</pubDate>
+      <pubDate>Sat, 28 Dec 2024 20:18:43 +0200</pubDate>
       <guid>https://jupiter-commits.github.io/posts/virtualisation-approaches/</guid>
-      <description>history and use cases of virtualisation consilidation para vartualisation Choosing hypervisor: (cloud provider uses which, fast? , secure?, open source?) ESXi: famous, most used, tutorials, used in university, used in companies XCP-ng Xenserver(Citrix) KVM, on CentOS Hyper-v Proxmox need usability and ease to manage vms&#xA;the problem to solve is:&#xA;remotely management separation of server to multiple vms utilization of limited GPUs and resources </description>
+      <description>this article is still being edited, visit later fore more detailed information&#xA;history and use cases of virtualisation A hypervisor is the solution that allows virtual machines to share host resources.&#xA;Virtualisation allows for running multiple operating systems on a single physical host.&#xA;This helps enhancing server utilisation and management.&#xA;Consilidation is sharing the resources of a (big) server by multiple virtual machines, leading to reduced cost&#xA;Paravartualisation Paravirtualization is a technique to improve the performance, the guest operating system has support for paravirtualization to work more efficiently with the hypervisor with less overhead.</description>
     </item>
     <item>
       <title>Level up your KVM storage management with these tricks</title>
