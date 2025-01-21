@@ -158,13 +158,41 @@
 
   
 
-  <section><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qemu-img resize /path/to/disk.qcow2 50G
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qemu-img info /path/to/disk.qcow2
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virt-sparsify --in-place /path/to/disk.qcow2
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qemu-img convert /path/to/disk.qcow2 -O raw /another/path/disk.img
+  <section><ul>
+<li>Change the size of a disk (be cautious)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qemu-img resize /path/to/disk.qcow2 50G
+</span></span></code></pre></div><ul>
+<li>Check disk info including the size reserved on disk and virtual size</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qemu-img info /path/to/disk.qcow2
+</span></span></code></pre></div><ul>
+<li>Make disk sparse (free space that is allocated to the host but not used), use only when the machine is shut down</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virt-sparsify --in-place /path/to/disk.qcow2
+</span></span></code></pre></div><ul>
+<li>Convert format of the disk</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qemu-img convert /path/to/disk.qcow2 -O raw /another/path/disk.img
 </span></span></code></pre></div><!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div></section>
+<ul>
+<li>Create a new virtual machine</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virt-install --name<span style="color:#f92672">=</span>VMNAME --memory<span style="color:#f92672">=</span><span style="color:#ae81ff">2048</span> --vcpus<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> --import --disk path<span style="color:#f92672">=</span>disk.qcow2 ,format<span style="color:#f92672">=</span>qcow2 --disk path<span style="color:#f92672">=</span>cd.iso,device<span style="color:#f92672">=</span>cdrom --os-variant<span style="color:#f92672">=</span>ubuntu24.10  --graphics vnc,listen<span style="color:#f92672">=</span>0.0.0.0 --noautoconsole
+</span></span></code></pre></div><ul>
+<li>List all virtual machines</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virsh list --all
+</span></span></code></pre></div><ul>
+<li>Get info about virtual machine</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virsh dominfo VMNAME
+</span></span></code></pre></div><ul>
+<li>Edit virtual machine xml</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virsh edit VMNAME
+</span></span></code></pre></div></section>
 
   
     
@@ -180,6 +208,10 @@
       
         <a href="/tags/kvm/" alt="KVM">
           KVM
+        </a>
+      
+        <a href="/tags/qemu/" alt="QEMU">
+          QEMU
         </a>
       
       </div>

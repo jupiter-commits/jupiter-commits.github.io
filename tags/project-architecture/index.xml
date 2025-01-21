@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project architecture on Jupiter notes</title>
+    <link>https://jupiter-commits.github.io/tags/project-architecture/</link>
+    <description>Recent content in Project architecture on Jupiter notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Dec 2024 15:22:37 +0200</lastBuildDate>
+    <atom:link href="https://jupiter-commits.github.io/tags/project-architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network architecture for servers, and Demilitarized zone (DMZ) (beta)</title>
+      <link>https://jupiter-commits.github.io/posts/network-architecture-dmz/</link>
+      <pubDate>Sun, 29 Dec 2024 15:22:37 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/network-architecture-dmz/</guid>
+      <description>After you separate web servers from DBMS so you can configure and scale databases independently, you may want to place web servers in a different zone.&#xA;A basic Firewall acts as a perimiter separating external network from internal network and filters traffic based on policies you set&#xA;Creating a Demilitarized zone (DMZ) by adding another firewall insulating the intranet with databases from web servers between intranet and public internet is a well known approach for security.</description>
+    </item>
+  </channel>
+</rss>

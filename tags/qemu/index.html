@@ -5,12 +5,12 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Commands that save much effort</title>
+<title>QEMU</title>
 <meta
   name="description"
-  content="In this post I share some commands that I find delpful in many use cases"
+  content=""
 />
-<link rel="canonical" href="https://jupiter-commits.github.io/posts/commands-that-save-effort/" />
+<link rel="canonical" href="https://jupiter-commits.github.io/tags/qemu/" />
 <link rel="robots" href="/robots.txt" />
 
 <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
@@ -135,75 +135,50 @@
   
     <main id="content">
 
-<article class="flex flex-col gap-10">
-  <header class="flex flex-col gap-2">
-    <h2 class="title-large">Commands that save much effort</h2>
 
-    <div class="meta">
+
+
+<div class="flex flex-col gap-1">
+  <h1 class="text-2xl font-extrabold">
+    
+      QEMU
       
-      <time datetime="2024-12-25 20:19:03 &#43;0200 EET" title=''>
-        Estimated reading time: 1 minutes
-      </time>
+    </h1>
+  
+  
+</div>
 
-       
-       — 
-        
-          <a class="categories" href="/categories/tools/" alt="Tools">
-            Tools
-          </a>
-         
-      
-    </div>
-  </header>
-
+<section class="flex flex-col gap-10">
+  
+    <article class="flex flex-col gap-1">
+  <h1>
+    <a href="https://jupiter-commits.github.io/posts/level-up-vm/">Level up your KVM storage management with these tricks</a>
+  </h1>
   
 
-  <section><ul>
-<li>Search in the contents of nested files:</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -rnw . -e <span style="color:#e6db74">&#34;word to search for&#34;</span> | less
-</span></span></code></pre></div><p>in <em>less</em> text viewer, write <code>/word</code> and click enter to search for it, then use <code>n</code> to go for next occurance, <code>Shift+n</code> to go backwards, and <code>q</code> to exit</p>
-<ul>
-<li>Compile your markdown file to PDF with auto generated table of contents</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pandoc --pdf-engine<span style="color:#f92672">=</span>xelatex --toc -f markdown-implicit_figures  --variable colorlinks<span style="color:#f92672">=</span>true  input.md -o output.pdf
-</span></span></code></pre></div><p>Specifying engine for pandoc <code>--pdf-engine=weasyprint</code> can help you in certain cases</p>
-<ul>
-<li>Convert image extension</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>magick image.jpg output.png
-</span></span></code></pre></div><ul>
-<li>Shutdown after 10 minutes</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>shutdown <span style="color:#ae81ff">10</span>
-</span></span></code></pre></div><p>List devices with UUID and mountpoints</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>lsblk -f
-</span></span></code></pre></div><p>List fonts</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fc-list
-</span></span></code></pre></div><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+  <div class="description">
+    
+      To help you working more effectively with virtual machines
+    
+  </div>
+
+  <div class="mt-2">
+    <a class="read-more" href="https://jupiter-commits.github.io/posts/level-up-vm/">
+      Read more
+      <span class="w-4 h-4 stroke-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+</svg>
+
+      </span>
+    </a>
+  </div>
+</article>
+
+  
 </section>
 
-  
-    
-  
 
-    
-  
-
-
-  <footer>
-    
-      <div class="pb-14 taxonomy-list tags-list">
-      
-        <a href="/tags/bash/" alt="Bash">
-          Bash
-        </a>
-      
-      </div>
-    
-  </footer>
-</article>
 
 
     </main><footer class="pt-5 pb-10 grid gap-3 sm:grid-cols-2">

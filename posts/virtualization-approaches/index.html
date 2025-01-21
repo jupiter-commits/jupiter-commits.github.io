@@ -5,12 +5,12 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Commands that save much effort</title>
+<title>Approaches for enterprise virtualization</title>
 <meta
   name="description"
-  content="In this post I share some commands that I find delpful in many use cases"
+  content="Part of upcoming virtualization series, comparing virtualisation solutions and more"
 />
-<link rel="canonical" href="https://jupiter-commits.github.io/posts/commands-that-save-effort/" />
+<link rel="canonical" href="https://jupiter-commits.github.io/posts/virtualization-approaches/" />
 <link rel="robots" href="/robots.txt" />
 
 <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
@@ -137,19 +137,19 @@
 
 <article class="flex flex-col gap-10">
   <header class="flex flex-col gap-2">
-    <h2 class="title-large">Commands that save much effort</h2>
+    <h2 class="title-large">Approaches for enterprise virtualization</h2>
 
     <div class="meta">
       
-      <time datetime="2024-12-25 20:19:03 &#43;0200 EET" title=''>
-        Estimated reading time: 1 minutes
+      <time datetime="2024-12-28 20:18:43 &#43;0200 EET" title=''>
+        Estimated reading time: 2 minutes
       </time>
 
        
        — 
         
-          <a class="categories" href="/categories/tools/" alt="Tools">
-            Tools
+          <a class="categories" href="/categories/virtualisation/" alt="Virtualisation">
+            Virtualisation
           </a>
          
       
@@ -158,29 +158,93 @@
 
   
 
-  <section><ul>
-<li>Search in the contents of nested files:</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -rnw . -e <span style="color:#e6db74">&#34;word to search for&#34;</span> | less
-</span></span></code></pre></div><p>in <em>less</em> text viewer, write <code>/word</code> and click enter to search for it, then use <code>n</code> to go for next occurance, <code>Shift+n</code> to go backwards, and <code>q</code> to exit</p>
+  <section><blockquote>
+<p>this article is still being edited, visit later fore more detailed information</p>
+</blockquote>
+<h1 id="history-and-use-cases-of-virtualisation">history and use cases of virtualisation</h1>
+<p>A <strong>hypervisor</strong> is the solution that allows virtual machines to share host resources.</p>
+<p>Virtualisation allows for running multiple operating systems on a single physical host.</p>
+<p>This helps enhancing server utilisation and management.</p>
+<p><strong>Consilidation</strong> is sharing the resources of a (big) server by multiple virtual machines, leading to reduced cost</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="paravartualisation">Paravartualisation</h1>
+<p>Paravirtualization is a technique to improve the performance, the guest operating system has support for paravirtualization to work more efficiently with the hypervisor with less overhead.</p>
+<p>remember that the hypervisor modifies and redirects virtual machine&rsquo;s calls to the hardware, for paravirtualization case calls are redirected without modification.</p>
+<p>Another way to enhance performance is <strong>hardware assisted virtualization extension</strong> like Intel VT and AMD V, which offers additional instruction set to assist the hypervisor.</p>
+<h1 id="virtualisation-solutions">Virtualisation solutions</h1>
+<h2 id="hypervisors-">Hypervisors :</h2>
 <ul>
-<li>Compile your markdown file to PDF with auto generated table of contents</li>
+<li>
+<p>Xen</p>
+</li>
+<li>
+<p>VMware ESXi</p>
+</li>
+<li>
+<p>KVM</p>
+</li>
+<li>
+<p>Hyper-V</p>
+</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pandoc --pdf-engine<span style="color:#f92672">=</span>xelatex --toc -f markdown-implicit_figures  --variable colorlinks<span style="color:#f92672">=</span>true  input.md -o output.pdf
-</span></span></code></pre></div><p>Specifying engine for pandoc <code>--pdf-engine=weasyprint</code> can help you in certain cases</p>
+<h2 id="full-solutions">Full solutions:</h2>
 <ul>
-<li>Convert image extension</li>
+<li>
+<p>XCP-ng</p>
+</li>
+<li>
+<p>VMware Vsphere</p>
+</li>
+<li>
+<p>Proxmox</p>
+</li>
+<li>
+<p>Redhat</p>
+</li>
+<li>
+<p>SUSE</p>
+</li>
+<li>
+<p>Openstack</p>
+</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>magick image.jpg output.png
-</span></span></code></pre></div><ul>
-<li>Shutdown after 10 minutes</li>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="insights-about-hypervisors">insights about hypervisors</h1>
+<h2 id="hypervisors-used-by-cloud-providers">hypervisors used by cloud providers:</h2>
+<ul>
+<li>
+<p><strong>AWS</strong></p>
+<ul>
+<li>EC2 instances use their own <a href="https://aws.amazon.com/ec2/nitro/">Nitro</a> hypervisor (built on core KVM), but supports Xen-based VMs</li>
+<li>Amazon Linux  is available as virtual machine images for : KVM, Hyper-V, VirtualBox, and ESXi</li>
+<li>It also supports running Hyper-V on <a href="https://aws.amazon.com/blogs/compute/running-hyper-v-on-amazon-ec2-bare-metal-instances/">a bare metal instance</a>, or <a href="https://aws.amazon.com/vmware/">working with VMware machines</a></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>shutdown <span style="color:#ae81ff">10</span>
-</span></span></code></pre></div><p>List devices with UUID and mountpoints</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>lsblk -f
-</span></span></code></pre></div><p>List fonts</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fc-list
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</li>
+<li>
+<p><strong>Azure</strong> uses a console only edition of windows (called Cloud Host) and Hyper-V, and have migraation options for VMware and Xen machines</p>
+</li>
+<li>
+<p><strong>GCP</strong> uses KVM with their own front end</p>
+</li>
+<li>
+<p>Dedicated Host-HUAWEI CLOUD uses KVM</p>
+</li>
+</ul>
+<blockquote>
+<p>factors to decide which hypervisor to use vary from (license, price and, support) to (speed, ease of use, and security)</p>
+</blockquote>
+<p>Before chosing hypervisor to rely on you need to specify your problem needs and priorities. For example you may want:</p>
+<ul>
+<li>remotely centralized management and monitoring</li>
+<li>moving or replicating virtual machines across servers</li>
+<li>utilization of limited GPUs and resources on only some servers</li>
+<li>Virtual networking</li>
+<li>Storage management features</li>
+</ul>
+<!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 </section>
 
@@ -193,14 +257,6 @@
 
 
   <footer>
-    
-      <div class="pb-14 taxonomy-list tags-list">
-      
-        <a href="/tags/bash/" alt="Bash">
-          Bash
-        </a>
-      
-      </div>
     
   </footer>
 </article>

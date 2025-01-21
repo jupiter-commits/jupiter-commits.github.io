@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>KVM on Jupiter notes</title>
-    <link>https://jupiter-commits.github.io/tags/kvm/</link>
-    <description>Recent content in KVM on Jupiter notes</description>
+    <title>QEMU on Jupiter notes</title>
+    <link>https://jupiter-commits.github.io/tags/qemu/</link>
+    <description>Recent content in QEMU on Jupiter notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Dec 2024 20:18:30 +0200</lastBuildDate>
-    <atom:link href="https://jupiter-commits.github.io/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jupiter-commits.github.io/tags/qemu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Level up your KVM storage management with these tricks</title>
       <link>https://jupiter-commits.github.io/posts/level-up-vm/</link>

@@ -10,9 +10,9 @@
     <atom:link href="https://jupiter-commits.github.io/categories/virtualisation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Approaches for enterprise virtualization</title>
-      <link>https://jupiter-commits.github.io/posts/virtualisation-approaches/</link>
+      <link>https://jupiter-commits.github.io/posts/virtualization-approaches/</link>
       <pubDate>Sat, 28 Dec 2024 20:18:43 +0200</pubDate>
-      <guid>https://jupiter-commits.github.io/posts/virtualisation-approaches/</guid>
+      <guid>https://jupiter-commits.github.io/posts/virtualization-approaches/</guid>
       <description>this article is still being edited, visit later fore more detailed information&#xA;history and use cases of virtualisation A hypervisor is the solution that allows virtual machines to share host resources.&#xA;Virtualisation allows for running multiple operating systems on a single physical host.&#xA;This helps enhancing server utilisation and management.&#xA;Consilidation is sharing the resources of a (big) server by multiple virtual machines, leading to reduced cost&#xA;Paravartualisation Paravirtualization is a technique to improve the performance, the guest operating system has support for paravirtualization to work more efficiently with the hypervisor with less overhead.</description>
     </item>
     <item>
@@ -20,7 +20,7 @@
       <link>https://jupiter-commits.github.io/posts/level-up-vm/</link>
       <pubDate>Wed, 25 Dec 2024 20:18:30 +0200</pubDate>
       <guid>https://jupiter-commits.github.io/posts/level-up-vm/</guid>
-      <description>qemu-img resize /path/to/disk.qcow2 50G qemu-img info /path/to/disk.qcow2 virt-sparsify --in-place /path/to/disk.qcow2 qemu-img convert /path/to/disk.qcow2 -O raw /another/path/disk.img </description>
+      <description>Change the size of a disk (be cautious) qemu-img resize /path/to/disk.qcow2 50G Check disk info including the size reserved on disk and virtual size qemu-img info /path/to/disk.qcow2 Make disk sparse (free space that is allocated to the host but not used), use only when the machine is shut down virt-sparsify --in-place /path/to/disk.qcow2 Convert format of the disk qemu-img convert /path/to/disk.qcow2 -O raw /another/path/disk.img Create a new virtual machine virt-install --name=VMNAME --memory=2048 --vcpus=1 --import --disk path=disk.</description>
     </item>
   </channel>
 </rss>

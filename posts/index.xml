@@ -6,13 +6,20 @@
     <description>Recent content in Post on Jupiter notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2024 20:18:43 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2024 15:22:37 +0200</lastBuildDate>
     <atom:link href="https://jupiter-commits.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Network architecture for servers, and Demilitarized zone (DMZ) (beta)</title>
+      <link>https://jupiter-commits.github.io/posts/network-architecture-dmz/</link>
+      <pubDate>Sun, 29 Dec 2024 15:22:37 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/network-architecture-dmz/</guid>
+      <description>After you separate web servers from DBMS so you can configure and scale databases independently, you may want to place web servers in a different zone.&#xA;A basic Firewall acts as a perimiter separating external network from internal network and filters traffic based on policies you set&#xA;Creating a Demilitarized zone (DMZ) by adding another firewall insulating the intranet with databases from web servers between intranet and public internet is a well known approach for security.</description>
+    </item>
+    <item>
       <title>Approaches for enterprise virtualization</title>
-      <link>https://jupiter-commits.github.io/posts/virtualisation-approaches/</link>
+      <link>https://jupiter-commits.github.io/posts/virtualization-approaches/</link>
       <pubDate>Sat, 28 Dec 2024 20:18:43 +0200</pubDate>
-      <guid>https://jupiter-commits.github.io/posts/virtualisation-approaches/</guid>
+      <guid>https://jupiter-commits.github.io/posts/virtualization-approaches/</guid>
       <description>this article is still being edited, visit later fore more detailed information&#xA;history and use cases of virtualisation A hypervisor is the solution that allows virtual machines to share host resources.&#xA;Virtualisation allows for running multiple operating systems on a single physical host.&#xA;This helps enhancing server utilisation and management.&#xA;Consilidation is sharing the resources of a (big) server by multiple virtual machines, leading to reduced cost&#xA;Paravartualisation Paravirtualization is a technique to improve the performance, the guest operating system has support for paravirtualization to work more efficiently with the hypervisor with less overhead.</description>
     </item>
     <item>
@@ -27,21 +34,14 @@
       <link>https://jupiter-commits.github.io/posts/commands-that-save-effort/</link>
       <pubDate>Wed, 25 Dec 2024 20:19:03 +0200</pubDate>
       <guid>https://jupiter-commits.github.io/posts/commands-that-save-effort/</guid>
-      <description> Search in the contents of nested files: grep -rnw . -e &amp;#34;word to search for&amp;#34; | less in less text viewer, write /word and click enter to search for it, then use n to go for next occurance, Shift+n to go backwards, and q to exit&#xA;Compile your markdown file to PDF with auto generated table of contents pandoc --pdf-engine=xelatex --toc -f markdown-implicit_figures --variable colorlinks=true input.md -o output.pdf </description>
+      <description>Search in the contents of nested files: grep -rnw . -e &amp;#34;word to search for&amp;#34; | less in less text viewer, write /word and click enter to search for it, then use n to go for next occurance, Shift+n to go backwards, and q to exit&#xA;Compile your markdown file to PDF with auto generated table of contents pandoc --pdf-engine=xelatex --toc -f markdown-implicit_figures --variable colorlinks=true input.md -o output.pdf Specifying engine for pandoc --pdf-engine=weasyprint can help you in certain cases</description>
     </item>
     <item>
       <title>Level up your KVM storage management with these tricks</title>
       <link>https://jupiter-commits.github.io/posts/level-up-vm/</link>
       <pubDate>Wed, 25 Dec 2024 20:18:30 +0200</pubDate>
       <guid>https://jupiter-commits.github.io/posts/level-up-vm/</guid>
-      <description>qemu-img resize /path/to/disk.qcow2 50G qemu-img info /path/to/disk.qcow2 virt-sparsify --in-place /path/to/disk.qcow2 qemu-img convert /path/to/disk.qcow2 -O raw /another/path/disk.img </description>
-    </item>
-    <item>
-      <title>Avoid Complexity as much you can, focus on productivity (draft)</title>
-      <link>https://jupiter-commits.github.io/posts/avoid-complexity/</link>
-      <pubDate>Wed, 25 Dec 2024 20:17:58 +0200</pubDate>
-      <guid>https://jupiter-commits.github.io/posts/avoid-complexity/</guid>
-      <description></description>
+      <description>Change the size of a disk (be cautious) qemu-img resize /path/to/disk.qcow2 50G Check disk info including the size reserved on disk and virtual size qemu-img info /path/to/disk.qcow2 Make disk sparse (free space that is allocated to the host but not used), use only when the machine is shut down virt-sparsify --in-place /path/to/disk.qcow2 Convert format of the disk qemu-img convert /path/to/disk.qcow2 -O raw /another/path/disk.img Create a new virtual machine virt-install --name=VMNAME --memory=2048 --vcpus=1 --import --disk path=disk.</description>
     </item>
     <item>
       <title>A look into software test automation (draft)</title>
