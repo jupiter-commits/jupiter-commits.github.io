@@ -44,6 +44,13 @@
       <description>Change the size of a disk (be cautious) qemu-img resize /path/to/disk.qcow2 50G Check disk info including the size reserved on disk and virtual size qemu-img info /path/to/disk.qcow2 Make disk sparse (free space that is allocated to the host but not used), use only when the machine is shut down virt-sparsify --in-place /path/to/disk.qcow2 Convert format of the disk qemu-img convert /path/to/disk.qcow2 -O raw /another/path/disk.img Create a new virtual machine virt-install --name=VMNAME --memory=2048 --vcpus=1 --import --disk path=disk.</description>
     </item>
     <item>
+      <title>Log aggregation and analytics using ELK/EFK (Elastic) stack</title>
+      <link>https://jupiter-commits.github.io/posts/elk-logging/</link>
+      <pubDate>Wed, 25 Dec 2024 20:17:58 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/elk-logging/</guid>
+      <description>Example diagram: </description>
+    </item>
+    <item>
       <title>A look into software test automation (draft)</title>
       <link>https://jupiter-commits.github.io/posts/testing/test-automation/</link>
       <pubDate>Sun, 25 Aug 2024 21:33:09 +0200</pubDate>
