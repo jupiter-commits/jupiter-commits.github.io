@@ -15,5 +15,12 @@
       <guid>https://jupiter-commits.github.io/posts/network-architecture-dmz/</guid>
       <description>After you separate web servers from DBMS so you can configure and scale databases independently, you may want to place web servers in a different zone.&#xA;A basic Firewall acts as a perimiter separating external network from internal network and filters traffic based on policies you set&#xA;Creating a Demilitarized zone (DMZ) by adding another firewall insulating the intranet with databases from web servers between intranet and public internet is a well known approach for security.</description>
     </item>
+    <item>
+      <title>Log aggregation and analytics using ELK/EFK (Elastic) stack</title>
+      <link>https://jupiter-commits.github.io/posts/elk-logging/</link>
+      <pubDate>Wed, 25 Dec 2024 20:17:58 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/elk-logging/</guid>
+      <description>Example diagram: Logstash parses and enhances logs, Fluentd can be used instead&#xA;Logs are stored and retrieved from Elasticsearch instances</description>
+    </item>
   </channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualization on Jupiter notes</title>
+    <link>https://jupiter-commits.github.io/categories/virtualization/</link>
+    <description>Recent content in Virtualization on Jupiter notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Dec 2024 20:18:43 +0200</lastBuildDate>
+    <atom:link href="https://jupiter-commits.github.io/categories/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Approaches for enterprise virtualization</title>
+      <link>https://jupiter-commits.github.io/posts/virtualization-approaches/</link>
+      <pubDate>Sat, 28 Dec 2024 20:18:43 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/virtualization-approaches/</guid>
+      <description>this article is still being edited, visit later fore more detailed information&#xA;history and use cases of virtualisation A hypervisor is the solution that allows virtual machines to share host resources.&#xA;Virtualisation allows for running multiple operating systems on a single physical host.&#xA;This helps enhancing server utilisation and management.&#xA;Consilidation is sharing the resources of a (big) server by multiple virtual machines, leading to reduced cost&#xA;Paravartualisation Paravirtualization is a technique to improve the performance, the guest operating system has support for paravirtualization to work more efficiently with the hypervisor with less overhead.</description>
+    </item>
+  </channel>
+</rss>

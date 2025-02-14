@@ -26,7 +26,7 @@
     <loc>https://jupiter-commits.github.io/categories/</loc>
     <lastmod>2024-12-28T20:18:43+02:00</lastmod>
   </url><url>
-    <loc>https://jupiter-commits.github.io/categories/virtualisation/</loc>
+    <loc>https://jupiter-commits.github.io/categories/virtualization/</loc>
     <lastmod>2024-12-28T20:18:43+02:00</lastmod>
   </url><url>
     <loc>https://jupiter-commits.github.io/posts/boot-iso-file/</loc>
@@ -48,6 +48,9 @@
     <lastmod>2024-12-25T20:18:30+02:00</lastmod>
   </url><url>
     <loc>https://jupiter-commits.github.io/tags/qemu/</loc>
+    <lastmod>2024-12-25T20:18:30+02:00</lastmod>
+  </url><url>
+    <loc>https://jupiter-commits.github.io/categories/virtualisation/</loc>
     <lastmod>2024-12-25T20:18:30+02:00</lastmod>
   </url><url>
     <loc>https://jupiter-commits.github.io/posts/elk-logging/</loc>

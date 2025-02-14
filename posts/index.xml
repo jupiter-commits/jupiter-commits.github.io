@@ -48,7 +48,7 @@
       <link>https://jupiter-commits.github.io/posts/elk-logging/</link>
       <pubDate>Wed, 25 Dec 2024 20:17:58 +0200</pubDate>
       <guid>https://jupiter-commits.github.io/posts/elk-logging/</guid>
-      <description>Example diagram: </description>
+      <description>Example diagram: Logstash parses and enhances logs, Fluentd can be used instead&#xA;Logs are stored and retrieved from Elasticsearch instances</description>
     </item>
     <item>
       <title>A look into software test automation (draft)</title>
