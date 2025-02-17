@@ -6,8 +6,15 @@
     <description>Recent content in System design on Jupiter notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2024 15:22:37 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2025 20:19:31 +0200</lastBuildDate>
     <atom:link href="https://jupiter-commits.github.io/tags/system-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example for infrastructure architecture with diagrams</title>
+      <link>https://jupiter-commits.github.io/posts/project-architecture-example/</link>
+      <pubDate>Thu, 23 Jan 2025 20:19:31 +0200</pubDate>
+      <guid>https://jupiter-commits.github.io/posts/project-architecture-example/</guid>
+      <description>DMZ separating into an intranet and DMZ like in image has benefits for both:&#xA;Scaling, separating databases from web servers so we can scale each of them individually Security, separating duties so web servers that handle requests from public internet are isolated from more private machines Management VLAN Mainly for the most critical assets&#xA;contains a machine that acts as Ansible controller&#xA;Using Ansible Running configuration as code (playbooks) to configure and mantain the state of machines through SSH connection Not only Linux machines like web servers or databases, but can also configure supported network products like F5 Big-IP &amp;amp; firewalls Also useful for compliance and hardening infrastructure Usage of cloud Probably the use case could be one (or more) of the following:</description>
+    </item>
     <item>
       <title>Network architecture for servers, and Demilitarized zone (DMZ) (beta)</title>
       <link>https://jupiter-commits.github.io/posts/network-architecture-dmz/</link>
